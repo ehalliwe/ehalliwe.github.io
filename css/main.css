@@ -61,3 +61,8 @@ table {
 img {
     width: 100px; height: 100px;
 }
+
+img:hover{
+    height: 600px;
+    width: 600px;
+}
