@@ -48,21 +48,3 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
-
-th,td {
-    padding: 15px;
-    border: 1px solid black;
-}
-
-table {
-  border: 1px solid black;
-}
-
-img {
-    width: 100px; height: 100px;
-}
-
-img:hover{
-    height: 600px;
-    width: 600px;
-}
