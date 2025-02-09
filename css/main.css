@@ -1,9 +1,6 @@
 body {
     margin: 40px auto;
     width: 90%;
-    /* 
-    background-color: AliceBlue; 
-    */
 }
 nav ul, footer ul {
     font-family:'Serif';
@@ -63,6 +60,6 @@ img {
 }
 
 img:hover{
-    height: 600px;
-    width: 600px;
+    transform: scale(6);
+    max-width: 600px
 }

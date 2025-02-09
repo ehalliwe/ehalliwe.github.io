@@ -5,67 +5,93 @@ title: erik halliwell
 <div class="blurb">
 
 	<h2>portfolio (wip)</h2>
+
+	this is intentionally barebones to keep SNR high.
+
 	<table>
 		<tr>
-			<td>project name</td>
+			<td>project name/topic (newest-oldest)</td>
 			<td>description</td>
+			<td>tools/hardware used</td>
 			<td>image(s)</td>
 		</tr>
-	  	<tr>
-	    	<td>satellite laser doppler</td>
-	    	<td>applying old (pre-GPS) methods of doppler-based RF orbit determination to modern space-to-ground laser communication systems</td>
-	    	<td><img src="/img/pw25.png" width="100" height="100"></td>
+		<tr>
+	    	<td>this website</td>
+	    	<td>challenging myself to make this thing informative while using as little CSS as humanly possible - there's a certain charm to that</td>
+	    	<td>html, css</td>
+	    	<td>n/a</td>
 	  	</tr>
 	  	<tr>
-	    	<td>satellite laser ranging</td>
+	    	<td>satellite orbit determination via laser doppler measurements</td>
+	    	<td>applying old (pre-GPS) methods of doppler-based RF orbit determination to modern space-to-ground laser communication systems. presented work at SPIE Photonics West in january 2025.</td>
+	    	<td>MATLAB, python</td>
+	    	<td><img src="/img/pw25.png" width="150" height="100"></td>
+	  	</tr>
+
+	  	<tr>
+	    	<td>PEPPER-X sounding rocket experiment - tech demonstration</td>
+	    	<td>developed two space weather scientific instruments and supporting electronics, flew on NASA's RockSat-X sounding rocket in august 2024. i led PM/SE, and designed/built/tested/calibrated the search coil magnetometer payload and a hermetically sealed STM32 based data logger. these systems will now fly on the $20MM ualberta RADICALS microsatellite</td>
+	    	<td>SPICE, KiCAD, C/C++, STM32 mcu's, Fusion360, python</td>
+	    	<td><img src="/img/agu24.png" width="150" height="100"></td>
+	  	</tr>
+
+	  	<tr>
+	    	<td>infrared satellite laser ranging/laser communication ground station concept study</td>
 	    	<td>most time of flight-based laser ranging systems use Nd:YAG lasers operating at 532 nm. in this work we explored the feasibility of performing SLR at 1550 nm.
-	    	<td><img src="/img/pw24.png" width="100" height="100"></td>
+	    	<td>MATLAB, python</td>
+	    	<td><img src="/img/pw24.png" width="150" height="100"></td>
 	  	</tr>
+
 	  	<tr>
-	    	<td>PEPPER-X sounding rocket experiment</td>
-	    	<td>developed two space weather scientific instruments and supporting electronics, flew on NASA's RockSat-X sounding rocket in august 2024.</td>
-	    	<td><img src="/img/agu24.png" width="100" height="100"></td>
-	  	</tr>
-	  	<tr>
-	    	<td>balloon communications and tracking</td>
-	    	<td>used LoRa and APRS to get live telemetry and tracking information for a stratospheric weather balloon in july 2023 </td>
+	    	<td>stratospheric balloon telemetry and tracking system</td>
+	    	<td>used LoRa and APRS to get live telemetry and tracking information for a stratospheric weather balloon in july 2023. worked like a charm except the balloon went down in a river and was unrecoverable. good thing we had that live telemetry downlink!</td>
+	    	<td>ARM mcu's, C/C++, LightAPRS modules, SX1276 LoRa transceivers</td>
 	    	<td><img src="/img/sask.png" width="100" height="100"></td>
 	  	</tr>
+	  	
 	  	<tr>
-	    	<td>cubesat solar panels</td>
-	    	<td>part of my undergraduate research for albertasat. these panels have been flown on 3 satellites and soon a fourth. performance is the same as commercial systems but costs 4x less </td>
+	    	<td>benchtop free space optical comm system</td>
+	    	<td>in my final year of undergrad we built an LED-based free space optical communication system that implemented interleaving, scrambling, and LDPC FEC resulting in BER < 10e-6 in LEO-to-ground levels of emulated turbulence</td>
+	    	<td>C/C++, liquidSDR, MATLAB</td>
+	    	<td><img src="/img/fsoc.png" width="150" height="100"></td>
+	  	</tr>
+
+	  	<tr>
+	    	<td>guitar multi-effects pedal for hackathon</td>
+	    	<td>came 2nd in HackED 2021 with this design and simulation of an all-analog guitar pedal that included a clean gain stage (tube screamer esque), distortion (like a boss ds-1), 4-band multi-eq (easy to expand to ~8 stages), and noise gate (i grew up playing heavy metal).</td>
+	    	<td>SPICE, KiCAD</td>
+	    	<td>img</td>
+	  	</tr>
+
+	  	<tr>
+	    	<td>flight-qualified in-house cubesat deployable solar panels</td>
+	    	<td>part of my undergraduate research for albertasat. these panels have been flown on 3 satellites and soon a fourth. performance is the same as commercial systems but costs 4x less. i also created a novel solar cell assembly procedure that is orders of magnitude easier to complete than the standard epoxy-based methods. </td>
+	    	<td>Altium, MATLAB, SOLIDWORKS</td>
 	    	<td><img src="/img/solar.jpg" width="100" height="100"></td>
 	  	</tr>
+
 	  	<tr>
-	    	<td>satellite operations</td>
-	    	<td>over the 18 month mission i spent > 20 hours doing live satellite operations at all hours of the day for alberta's first satellite, ex-alta 1 </td>
+	    	<td>solar simulation calibration tools</td>
+	    	<td>i built an automated calibration toolchain product to support qualification testing for G2V's LED-based solar simulators</td>
+	    	<td>ARM mcu's, python, bash</td>
+	    	<td>img</td>
+	  	</tr>
+	  	
+	  	<tr>
+	    	<td>satellite operations for Ex-Alta 1 cubesat</td>
+	    	<td>over the 18 month mission i spent > 20 hours doing live satellite operations at all hours of the day for alberta's first satellite, ex-alta 1. pictured here is me flying the second-ever-last-pass of Ex-Alta 2 before its vaporization in earth's atmosphere.</td>
+	    	<td>bash, forth, C/C++, MATLAB</td>
 	    	<td><img src="/img/ops.png" width="100" height="100"></td>
 	  	</tr>
+	  
 	  	<tr>
-	    	<td>free space optical comm system</td>
-	    	<td>in my final year of undergrad we built an LED-based free space optical communication system that implemented interleaving, scrambling, and LDPC FEC resulting in BER < 10e-6 in LEO-to-ground levels of emulated turbulence</td>
-	    	<td><img src="/img/fsoc.png" width="100" height="100"></td>
-	  	</tr>
-	  	<tr>
-	    	<td>solar simulation</td>
-	    	<td>desc</td>
+	    	<td>testing Ex-Alta 2 multispectral imager on a 3MM cu.ft stratospheric balloon</td>
+	    	<td>built all electrical systems for a demo of the Ex2 in-house multispectral imager. flew summer '18 from timmins ontario as part of a ~400lb gondola. we were part of the the first-ever CAN-SEDS-SBX project team and drove 35h each way to/from timmins. never again.</td>
+	    	<td>MATLAB, C/C++, python</td>
 	    	<td>img</td>
 	  	</tr>
-	  	<tr>
-	    	<td>guitar pedals</td>
-	    	<td>desc</td>
-	    	<td>img</td>
-	  	</tr>
-	  	<tr>
-	    	<td>multispectral imager balloon mission</td>
-	    	<td>desc</td>
-	    	<td>img</td>
-	  	</tr>
-	  	<tr>
-	    	<td>guitar pedals</td>
-	    	<td>desc</td>
-	    	<td>img</td>
-	  	</tr>
+	  		
+	  	
 	</table>
 
 </div><!-- /.blurb -->
