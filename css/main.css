@@ -1,9 +1,7 @@
 body {
     margin: 40px auto;
     width: 90%;
-    /* 
-    background-color: AliceBlue; 
-    */
+    margin-bottom: 200px;
 }
 nav ul, footer ul {
     font-family:'Serif';
@@ -47,4 +45,26 @@ ul.posts {
 
 ul.posts li {
     list-style: none;
+<<<<<<< ours
+=======
+}
+
+th,td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+table {
+  border: 1px solid black;
+}
+
+img {
+    width: 100px; height: 100px; position: relative; z-index:0;
+}
+
+img:hover{
+    transform: scale(6);
+    max-width: 600px;
+    z-index: 999;
+>>>>>>> theirs
 }
