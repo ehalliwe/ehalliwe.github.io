@@ -63,8 +63,7 @@ img {
 }
 
 img:hover{
-    transform: scale(6);
+    transform: scale(6); transform-origin: right center;
     max-width: 600px;
     z-index: 999;
->>>>>>> theirs
 }
