@@ -6,66 +6,74 @@ title: erik halliwell
 
 	<h2>portfolio</h2>
 
-	<p>summary: i've built PCBs and wrote firmware/software that has gone to space (and worked), had fun with dinky hackathon tinker projects, made this ugly website, and created work that ended up being published in laser comms, satellite laser ranging, solar panels, and space weather research instruments. this whole thing started when i joined our UofA cubesat team (AlbertaSat) back in high school, and cut my teeth in satellite operations and electrical systems before entering university. i got addicted to building things that worked (or didn't, either way it's fun) and am always on the lookout for my next rabbit hole to go down!</p>
+	<p>summary: i've built PCBs and wrote firmware/software that has gone to space (and worked), had fun with dinky hackathon tinker projects, made this ugly website, and created work that ended up being published in laser comms, satellite laser ranging, solar panels, and space weather research instruments. this whole thing started when i joined our UofA cubesat team (AlbertaSat) back in high school, and cut my teeth in satellite operations and electrical systems before entering university. i got addicted to building things and am always on the lookout for my next rabbit hole to go down!</p>
 
-	<p>if you're interested in a certain project for any reason, feel free to email/DM me and i'll be happy to share more specifics</p>
+	<p>if you're interested in a certain project for any reason, feel free to email/DM me and i'll be happy to share more specifics as not all my repos are public. projects are listed in chronological order</p>
 
 	<table>
+
 		<tr>
-			<td><b>project name/topic (newest-oldest)</b></td>
+			<td><b>project name/topic</b></td>
 			<td><b>description</b></td>
 			<td><b>tools/hardware used</b></td>
 			<td><b>image(s) or link(s)</b></td>
+			<td><b>when? (ish)</b></td>
 		</tr>
+
 		<tr>
 			<td>rooftop suburban SatNOGS ground station</td>
 			<td>making a VHF + UHF Rx-only satellite ground station using simple omni antennas (this is a v0, after all). once i get this up and running smoothly i will 3d print a rotator/gearbox, convert add the use of yagi(s) and probably throw a webcam up there too. gotta have something to hack on while i plunk away at my thesis</td>
 			<td>rpi, RTL SDR, adalm-PLUTO SDR, blinkenlights...</td>
 			<td>work in progress!</td>
+			<td>fall '25</td>
 		</tr>
+
 		<tr>
 			<td>fantasy football draft assistant</td>
 			<td>mostly vibe coded, but it was a ton of fun to put screenshots of this into our group chat and roast people with a python script. integrates with sleeper leagues and contains a 10 GB scrape of all historical roster performance and injury data, does projections on strength of schedule.</td>
 			<td>python</td>
 			<td>will add later</td>
+			<td>summer '25</td>
 		</tr>
+
 		<tr>
 			<td>snow plot webcam</td>
 			<td>building on that EF retreat platform, recreated it at home and used a rpi4 + picam and ran openCV hosted onto an AWS Kinesis video stream to track how much powder is out there</td>
 			<td>RPI4, bash, python, AWS</td>
 			<td>will add later</td>
+			<td>spring '25</td>
 		</tr>
+
 		<tr>
 			<td>EFxbuild retreat Jan'25</td>
 			<td>used a rpi4 with a gc camera with a telescopic lens to do pixel-height conversion via openCV - this last bit is WIP. did this on an entrepreneurfirst build retreat in calistoga in an afternoon with poor wifi. shoutout oleg in the photo and logan murray for the idea</td>
 			<td>RPI4, bash, python</td>
 			<td><img src="img/ef.JPG" width="150" height ="75"></td>
+			<td>winter '25</td>
 		</tr>
+
 		<tr>
 	    	<td>this website</td>
 	    	<td>intentionally barebones to keep SNR high (>>3dB), an excuse to use as little CSS as humanly possible, and a revolt against the high loading times of today. and it's more funnyier.</td>
 	    	<td>html, css, vi (duh)</td>
 	    	<td>n/a</td>
+	    	<td>ongoing</td>
 	  	</tr>
+
 	  	<tr>
 	    	<td>satellite orbit determination via laser doppler measurements</td>
 	    	<td>applying old (pre-GPS) methods of doppler-based RF orbit determination to modern space-to-ground laser communication systems. presented work at SPIE Photonics West in january 2025.</td>
 	    	<td>MATLAB, python</td>
 	    	<td><img src="/img/pw25.png" width="150" height="100"></td>
+	    	<td>ongoing</td>
 	  	</tr>
 
 	  	<tr>
 	    	<td>PEPPER-X sounding rocket experiment - tech demonstration</td>
-	    	<td>developed two space weather scientific instruments and supporting electronics, flew on NASA's RockSat-X sounding rocket in august 2024. i led PM/SE, and designed/built/tested/calibrated the search coil magnetometer payload and a hermetically sealed STM32 based data logger. these systems will now fly on the $20MM ualberta RADICALS microsatellite</td>
-	    	<td>SPICE, KiCAD, C/C++, STM32 mcu's, Fusion360, python</td>
+	    	<td>developed two space weather scientific instruments and supporting electronics, flew on NASA's RockSat-X sounding rocket in august 2024. i led PM/SE, and designed/built/tested/calibrated the search coil magnetometer payload and a hermetically sealed STM32 based data logger. these systems will now fly on the $20MM ualberta RADICALS microsatellite in 2027 on a falcon 9 rideshare</td>
+	    	<td>SPICE, KiCAD, C/C++, STM32 mcu's, Fusion360, python, VHDL (smartfusion2 SoC)</td>
 	    	<td><img src="/img/agu24.png" width="150" height="100"></td>
-	  	</tr>
-
-	  	<tr>
-	    	<td>infrared satellite laser ranging/laser communication ground station concept study</td>
-	    	<td>most time of flight-based laser ranging systems use Nd:YAG lasers operating at 532 nm. in this work we explored the feasibility of performing SLR at 1550 nm.
-	    	<td>MATLAB, python</td>
-	    	<td><img src="/img/pw24.png" width="150" height="100"></td>
+	    	<td>summer '23 -> fall '24</td>
 	  	</tr>
 
 	  	<tr>
@@ -73,6 +81,15 @@ title: erik halliwell
 	    	<td>used LoRa and APRS to get live telemetry and tracking information for a stratospheric weather balloon in july 2023. worked like a charm except the balloon went down in a river and was unrecoverable. good thing we had that live telemetry downlink!</td>
 	    	<td>ARM mcu's, C/C++, LightAPRS modules, SX1276 LoRa transceivers</td>
 	    	<td><img src="/img/sask.png" width="100" height="100"></td>
+	    	<td>summer '23</td>
+	  	</tr>
+
+	  	<tr>
+	    	<td>infrared satellite laser ranging/laser communication ground station concept study</td>
+	    	<td>most time of flight-based laser ranging systems use Nd:YAG lasers operating at 532 nm. in this work we explored the feasibility of performing SLR at 1550 nm.
+	    	<td>MATLAB, python</td>
+	    	<td><img src="/img/pw24.png" width="150" height="100"></td>
+	    	<td>fall '22 -> winter '23</td>
 	  	</tr>
 	  	
 	  	<tr>
@@ -80,34 +97,39 @@ title: erik halliwell
 	    	<td>in my final year of undergrad we built an LED-based free space optical communication system that implemented interleaving, scrambling, and LDPC FEC resulting in BER < 10e-6 in LEO-to-ground levels of emulated turbulence</td>
 	    	<td>C/C++, liquidSDR, MATLAB</td>
 	    	<td><img src="/img/fsoc.png" width="150" height="100"></td>
+	    	<td>fall '21 -> summer '22</td>
 	  	</tr>
 
 	  	<tr>
-	    	<td>guitar multi-effects pedal for hackathon</td>
+	    	<td>guitar multi-effects guitar pedal for hackathon</td>
 	    	<td>came 2nd in HackED 2021 with this design and simulation of an all-analog guitar pedal that included a clean gain stage (tube screamer esque), distortion (like a boss ds-1), 4-band multi-eq (easy to expand to ~8 stages), and noise gate (i grew up playing heavy metal).</td>
 	    	<td>SPICE, KiCAD</td>
 	    	<td><a href="https://devpost.com/software/guitarmageddon">DEVPOST Link</a></td>
+	    	<td>winter '21</td>
 	  	</tr>
 
 	  	<tr>
 	    	<td>flight-qualified in-house cubesat deployable solar panels</td>
-	    	<td>part of my undergraduate research for albertasat. these panels have been flown on 3 satellites and soon a fourth. performance is the same as commercial systems but costs 4x less. i also created a novel solar cell assembly procedure that is orders of magnitude easier to complete than the standard epoxy-based methods. </td>
+	    	<td>part of my undergraduate research for albertasat. these panels have been flown on 3 satellites (below) and soon a fourth (Ex-Alta 3). performance is the same as commercial systems but costs 4x less. i also created a novel solar cell assembly procedure that is orders of magnitude easier to complete than the standard epoxy-based methods.</td>
 	    	<td>Altium, MATLAB, SOLIDWORKS</td>
 	    	<td><img src="/img/solar.jpg" width="100" height="100"></td>
+	    	<td>winter '17 -> summer '23</td>
 	  	</tr>
 
 	  	<tr>
 	    	<td>solar simulation calibration tools</td>
-	    	<td>i built an automated calibration toolchain product to support qualification testing for G2V's LED-based solar simulators</td>
+	    	<td>i built automated calibration toolchain products to support qualification testing for G2V's LED-based solar simulators</td>
 	    	<td>ARM mcu's, python, bash</td>
 	    	<td><a href="https://g2voptics.com/products/#:~:text=Class%20A%20Temporal%20Stability">Link to output</a></td>
+	    	<td>summer '20 & '21</td>
 	  	</tr>
-	  	
+
 	  	<tr>
-	    	<td>satellite operations for Ex-Alta 1 cubesat</td>
-	    	<td>over the 18 month mission i spent > 20 hours doing live satellite operations at all hours of the day for alberta's first satellite, ex-alta 1. pictured here is me flying the second-ever-last-pass of Ex-Alta 2 before its vaporization in earth's atmosphere.</td>
-	    	<td>bash, forth, C/C++, MATLAB</td>
-	    	<td><img src="/img/ops.png" width="100" height="100"></td>
+	    	<td>various cubesat PCBs and components for Ex-Alta 2 (3U) and AuroraSat (2U) and YukonSat (2U)</td>
+	    	<td>this was done as part of a team (obviously), and we created in-house power storage boards, power distribution boards, a UHF transceiver, an on board computer. those were the ones that i had a key role in - others, like our magnetometer board, were done by research staff or we bought COTS.</td>
+	    	<td>altium, KiCad, C/C++</td>
+	    	<td>will add later</td>
+	    	<td>winter '17 -> summer '23</td>
 	  	</tr>
 	  
 	  	<tr>
@@ -115,9 +137,25 @@ title: erik halliwell
 	    	<td>i built all electrical systems for a demo of the Ex2 in-house multispectral imager. flew summer '18 from timmins ontario as part of a ~400lb gondola. we were part of the the first-ever CAN-SEDS-SBX project team and drove 35h each way to/from timmins. never again. the photo on the right was taken by our imager pre-flight.</td>
 	    	<td>MATLAB, C/C++, python</td>
 	    	<td><img src="/img/miist.png" width="100" height="100"></td>
+	    	<td>fall '17 -> summer '18</td>
+	  	</tr>
+
+	  	<tr>
+	    	<td>satellite operations for Ex-Alta 1 cubesat</td>
+	    	<td>over the 18 month mission i spent > 20 hours doing live satellite operations at all hours of the day for alberta's first satellite, ex-alta 1. pictured here is me flying the second-ever-last-pass of Ex-Alta 1 before its vaporization in earth's atmosphere.</td>
+	    	<td>bash, forth, C/C++, MATLAB</td>
+	    	<td><img src="/img/ops.png" width="100" height="100"></td>
+	    	<td>winter '17 -> fall '18</td>
+	  	</tr>
+
+	  	<tr>
+	    	<td>LightTHABER Balloon Mission</td>
+	    	<td>first forray into space-related projects in high school. built the gondola/train, sourced balloons, and was a generally useful exuberant grade 12 student. backronym stands for Light Tandem High Altitude Balloon Experimental Research</td>
+	    	<td>a tank of helium</td>
+	    	<td>will add later</td>
+	    	<td>winter '17 -> summer '17</td>
 	  	</tr>
 	  		
-	  	
 	</table>
 
 </div><!-- /.blurb -->
